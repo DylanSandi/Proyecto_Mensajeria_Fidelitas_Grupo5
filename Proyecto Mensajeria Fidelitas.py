@@ -64,5 +64,4 @@ while True:
 
     else:
 
-        print("\nHa digitado una opción inválida, por favor intente de nuevo")
-        
+        print("\nHa digitado una opción inválida, por favor intente de nuevo")  
