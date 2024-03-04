@@ -97,3 +97,68 @@ while True:
     else:
 
         print("\nHa digitado una opción inválida, por favor intente de nuevo")
+# Función para la creación de paquetes
+def crear_paquete():
+    print("\nIngrese los siguientes datos para crear el paquete:")
+    destinatario = input("Nombre del destinatario: ")
+    telefono_destinatario = input("Teléfono del destinatario: ")
+    cedula_destinatario = input("Número de cédula del destinatario: ")
+    peso_paquete = float(input("Peso del paquete (Kilogramos): "))
+    cobro_contra_entrega = input("Monto en colones a cobrar contra entrega: ")
+    print("\nPaquete creado con éxito:")
+    print("Nombre del destinatario:", destinatario)
+    print("Teléfono del destinatario:", telefono_destinatario)
+    print("Número de cédula del destinatario:", cedula_destinatario)
+    print("Peso del paquete (Kilogramos):", peso_paquete)
+    print("Monto a cobrar contra entrega:", cobro_contra_entrega)
+
+opcion = 0
+
+print("Bienvenido al sistema de mensajería fidélitas.")
+print("\ningrese los credenciales de su usuario")
+
+# Aquí va el código de usuario
+
+while True:
+    print("\n------Menú------")
+    print("\n1.Registrar un usuario")
+    print("\n2.Registrar factura electrónica")
+    print("\n3.Salir del sistema")
+
+    opcion = int(input("\nIngrese la opción deseada:"))
+
+    if opcion == 1:
+        # Código para registrar un usuario
+        print("Por favor registre su cuenta de usuario")
+        # Aquí iría el código para registrar un usuario
+
+    elif opcion == 2:
+        # Código para registrar una factura electrónica
+        print("\nIngrese los siguientes datos:")
+        # Aquí iría el código para registrar una factura electrónica
+
+    elif opcion == 3:
+        opcionSalir = 0
+        while True:
+            print("\n¿Está seguro(a) que desea salir del sistema?")
+            print("\n1.Si")
+            print("\n2.No")
+            opcionSalir = int(input("\nIngrese la opción deseada:"))
+            if opcionSalir == 1:
+                print("\nGracias por utilizar nuestro sistema")
+                break
+            elif opcionSalir == 2:
+                break
+            else:
+                print("\nHa digitado una opción inválida, por favor intente de nuevo")
+        if opcionSalir == 1:
+            break
+        else:
+            print("\nRegresando al menú.....")
+
+    else:
+        print("\nHa digitado una opción inválida, por favor intente de nuevo")
+
+    # Llamar a la función para crear paquete si la opción es válida (opción 4)
+    if opcion == 4:
+        crear_paquete()
